@@ -11,27 +11,42 @@
 </head>
 <body>
     <header>
+
         <!--Houve um problema para exportar as imagens do símbolo e do logo, portanto escolhi fazê-las como texto no HTML e estilizar com o CSS-->
         <span id="simbolo"><a href="index.html">GM<div id="shadow-simbolo"></div></a></span>
+
         <span id="linha-left"></span>
-        <div id="logotipo">
-            <span id="link-logotipo">GAME MANIA</span>
-            <a href="./index.html"><div id="shadow-logotipo"></div></a>
-        </div>
-        <nav>
-            <div id="nav-itens">
-                <a href="#">Produtos</a>
-                <a href="#">Promoções</a>
-                <a href="#" class="fonte-menor">Exclusivo para Gamers</a>
-                <a href="#" class="fonte-menor">Área do Cliente</a>
-                <a href="#">Contato</a>
+
+
+        <div id="container-logo">
+            <div id="logotipo">
+                <span id="link-logotipo">GAME MANIA</span>
+                <a href="./index.html">
+                    <div id="shadow-logotipo"></div>
+                </a>
             </div>
-            <div id="nav-busca"><input type="search" placeholder="Buscar no site" id="barra-de-busca"></div>
+        </div>
+
+
+        <nav class="container">
+            <div class="row">
+                <a class="col-xxl-1 col-xl-1 col-lg-1" href="#">Produtos</a>
+                <a class="col-xxl-2 col-xl-1 col-lg-1" href="#">Promoções</a>
+                <a class="col-xxl-2 col-xl-2 col-lg-2 fonte-menor" href="#" class=>Exclusivo para Gamers</a>
+                <a class="col-xxl-2 col-xl-2 col-lg-2 fonte-menor" href="#" class="fonte-menor">Área do Cliente</a>
+                <a class="col-xxl-1 col-xl-1 col-lg-1" href="#">Contato</a>
+                <input class="col-xxl-4 col-xl-5 col-lg-5 col-md-12" type="search" placeholder="Buscar no site" id="barra-de-busca">
+            </div>
         </nav>
+
         <div id="top-right-box">
             <span id="login"><a href="login.html" target="_blank">Fazer Login</a></span>
+            <span id="menu"><a href="login.html" target="_blank">Menu</a></span>
             <span id="cadastro"><a href="#" target="_blank">Cadastrar-se</a></span>
+            <span id="buscar"><a href="#" target="_blank">Buscar</a></span>
         </div>
+
+
     </header>
 
     <main>

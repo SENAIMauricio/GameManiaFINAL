@@ -7,6 +7,8 @@ body {
     height: 800px;
 }
 
+/* HEADER START */
+
 header {
     width: 100%;
     height: 150px;
@@ -35,16 +37,15 @@ header {
     height: 70px;
     width: 90px;
     box-shadow: inset #0025aaa9 0 -30px 15px;
-
 }
 
-nav div a {
-    text-decoration: none;
-}
-
-nav div a:hover {
-    color: #0025AA;
-    font-weight: 600;
+#container-logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 580px;
+    top: -7px;
+    margin: 0 auto;
 }
 
 #logotipo {
@@ -52,9 +53,7 @@ nav div a:hover {
     font-family: 'Alumni Sans', sans-serif;
     width: 500px;
     height: 100px;
-    position: relative;
-    left: 550px;
-    top: -7px;
+
 }
 
 #logotipo span {
@@ -76,61 +75,76 @@ nav div a:hover {
     height: 5px;
 }
 
+/* Navbar Start */
+
 nav {
     background-color: #EC3219;
-    width: 60%;
-    height: 40%;
-    display: flex;
+    height: 35%;
     border: 1px solid black;
-    flex-direction: row;
-    justify-content: flex-start;
-    overflow: hidden;
     position: relative;
     top: 120px;
-    left: -140px;
+    left: -180px;
 }
 
-#nav-itens {
-    display: flex;
-    width: 60%;
+nav div {
     height: 100%;
-    margin: 0px;
 }
 
-#nav-busca {
-    display: flex;
-    width: 40%;
-    height: 100%;
-    margin: 0px;
-    justify-content: flex-start;
-    background-color: #EC3219;
-}
-
-nav div a, nav div input {
+nav div a,
+nav div input {
+    padding: 0 10px;
     border: 1px solid black;
-    font-size: 13pt;
+}
+
+nav div a,
+nav input {
+    font-size: 10pt;
     color: white;
     font-family: 'Inter', sans-serif;
     display: flex;
     align-items: center;
-}
-
-#nav-itens > a {
-    padding: 4px 13px 4px;
     justify-content: center;
+    text-decoration: none;
 }
 
-#barra-de-busca{
+#barra-de-busca {
     background: none;
-    width: 100%;
     margin: 0;
+    height: 100%;
 }
 
-nav input::placeholder{
+nav input::placeholder {
     font-style: italic;
     color: white;
     text-align: center;
 }
+
+nav a:hover {
+    color: #0025AA;
+    font-weight: 600;
+}
+
+.row #flex-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menu {
+    display: none;
+}
+
+/* Navbar End */
+
+
+
+
+
+
+/* HEADER END */
+
+
+/* MAIN START */
+
 #azul-escuro {
     background-color: #0025AA;
     width: 1777px;
@@ -142,10 +156,10 @@ nav input::placeholder{
 #azul-claro {
     background-color: #0094FF;
     width: 100%;
-    height:775px;
+    height: 775px;
     margin: 0;
     position: relative;
-    top: 95px;   
+    top: 95px;
 
 }
 
@@ -193,7 +207,7 @@ nav input::placeholder{
     border: 2px solid black;
     font-size: 30pt;
     font-family: 'Inter', sans-serif;
-    text-transform:uppercase;
+    text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,7 +232,7 @@ nav input::placeholder{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-   
+
 }
 
 #top-right-box span a {
@@ -227,7 +241,12 @@ nav input::placeholder{
     font-weight: 600;
     font-size: 18pt;
     text-decoration: none;
-    
+
+}
+
+
+#buscar {
+    display: none;
 }
 
 #login {
@@ -255,8 +274,9 @@ nav input::placeholder{
     left: 100px;
     border-left: 3px solid black;
 }
-.flex-container a:hover{
-    color: #EC3219; 
+
+.flex-container a:hover {
+    color: #EC3219;
     font-size: 40pt;
 }
 
@@ -268,7 +288,7 @@ nav input::placeholder{
     border-bottom: 4px solid black;
 }
 
-a  img.imagem-pequena {
+a img.imagem-pequena {
     padding: 0;
     margin: 0;
     width: 90%;
@@ -307,27 +327,29 @@ div#flex-container-img {
 #imagem-grande {
     width: 100%;
 }
+
 .parent-footer {
     background-color: rgba(0, 37, 170, 0.797);
     display: flex;
 
 }
 
-ul a, ul li {
+ul a,
+ul li {
     text-decoration: none;
     font-family: "Inter", sans-serif;
     font-size: 20pt;
     color: white;
 }
 
-ul a:hover{
+ul a:hover {
     text-decoration: none;
     font-family: "Inter", sans-serif;
     font-size: 20pt;
     color: #EC3219;
 }
 
-ul li:hover{
+ul li:hover {
     text-decoration: none;
     font-family: "Inter", sans-serif;
     font-size: 20pt;
@@ -338,7 +360,9 @@ ul {
     list-style: none;
 }
 
-.child-left, .child-center, .child-right{
+.child-left,
+.child-center,
+.child-right {
     text-align: left;
     width: 33.3%;
     ;
@@ -349,7 +373,8 @@ ul {
     padding-left: 50px;
 }
 
-.child-left, .child-right {
+.child-left,
+.child-right {
     padding: 35px;
 }
 
@@ -406,7 +431,8 @@ footer {
     z-index: -1;
 }
 
-#img-pqn1, #img-pqn2 {
+#img-pqn1,
+#img-pqn2 {
     filter: blur(0px);
 }
 
@@ -430,3 +456,391 @@ footer {
     top: -215px;
 }
 
+@media screen and (min-width: 0px) and (max-width: 575px) {
+    
+    header {
+        width: 120vh;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+    #container-logo {
+        left: 13%;
+        top: -8%;
+        margin: 0 auto;
+    }
+
+    #simbolo {
+        position: relative;
+        left: 5%;
+    }
+
+    #linha-left {
+        position: relative;
+        left: 10% !important;
+    }
+
+    #top-right-box {
+        position: relative;
+        left: 10%;
+        z-index: 0;
+        border-right: 3px solid black;
+        
+    }
+
+
+    #top-right-box span a {
+        font-weight: 500;
+        font-size: 10pt !important;
+        text-align: center;
+    }
+
+    body header #menu {
+        display: flex !important;
+        width: 100%;
+        border-top: 0.5px solid black;
+        border-bottom: 0.5px solid black;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+
+    #menu a {
+        color: #EC3219 !important;
+    }
+
+    body header #login {
+        border-bottom: 0.5px solid black;
+        padding: 0px 10px;
+    }
+
+    body header #login a {
+        width: 70px;
+    }
+
+    body header #cadastro {
+        border-top: 0.5px solid black;
+        padding: 0px 10px;
+        border-bottom: 0.5px solid black;
+    }
+
+    #buscar {
+        display: flex !important;
+        border-top: solid black 0.5px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 7px solid black
+    }
+
+    #buscar a {
+        color: #EC3219 !important;
+        padding: 10px 0px;
+    }
+
+
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    
+    header {
+        width: 100vh;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+    #container-logo {
+        left: 13%;
+        top: -8%;
+        margin: 0 auto;
+    }
+
+    #simbolo {
+        position: relative;
+        left: 5%;
+    }
+
+    #linha-left {
+        position: relative;
+        left: 10% !important;
+    }
+
+    #top-right-box {
+        position: relative;
+        left: 10%;
+        z-index: 0;
+        border-right: 3px solid black;
+        
+    }
+
+
+    #top-right-box span a {
+        font-weight: 500;
+        font-size: 10pt !important;
+        text-align: center;
+    }
+
+    body header #menu {
+        display: flex !important;
+        width: 100%;
+        border-top: 0.5px solid black;
+        border-bottom: 0.5px solid black;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+
+    #menu a {
+        color: #EC3219 !important;
+    }
+
+    body header #login {
+        border-bottom: 0.5px solid black;
+        padding: 0px 10px;
+    }
+
+    body header #login a {
+        width: 70px;
+    }
+
+    body header #cadastro {
+        border-top: 0.5px solid black;
+        padding: 0px 10px;
+        border-bottom: 0.5px solid black;
+    }
+
+    #buscar {
+        display: flex !important;
+        border-top: solid black 0.5px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 7px solid black
+    }
+
+    #buscar a {
+        color: #EC3219 !important;
+        padding: 10px 0px;
+    }
+
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+    header {
+        width: 110vh
+    }
+    
+    .row a {
+        display: none;
+    }
+    
+     input#barra-de-busca {
+        width: 500px;
+    }
+
+    nav.container {
+        left: -220px;
+        top: 98px;
+        margin: 0 auto;
+        height: 40px;
+        width: 400px;
+    }
+
+    .container .row {
+        width: 400px;
+    }
+
+    .container .row input {
+        font-size: 20px !important;
+    }
+
+    #container-logo {
+        left: 22%;
+        top: -20%;
+        margin: 0 auto;
+    }
+
+    #simbolo {
+        position: relative;
+        left: 5%;
+    }
+
+    #linha-left {
+        position: relative;
+        left: 8% !important;
+    }
+
+    #top-right-box {
+        position: relative;
+        left: 0%;
+        z-index: 0;
+        border-right: 3px solid black;
+    }
+
+    #top-right-box span a {
+        font-weight: 500;
+        font-size: 10pt !important;
+        text-align: center;
+    }
+
+    body header #menu {
+        display: flex !important;
+        width: 100%;
+        border-top: 0.5px solid black;
+        border-bottom: 0.5px solid black;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+
+    #menu a {
+        color: #EC3219 !important;
+    }
+
+    body header #login {
+        border-bottom: 0.5px solid black;
+        padding: 0px 10px;
+    }
+
+    body header #login a {
+        width: 110px;
+    }
+
+    body header #cadastro {
+        border-top: 0.5px solid black;
+        padding: 0px 10px;
+    }
+
+
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    header {
+        border-bottom: 2px solid black;
+    }
+
+    #container-logo {
+        left: 420px;
+    }
+
+    nav {
+        left: -230px;
+    }
+
+    .container .row {
+        width: 800px;
+    }
+
+    #simbolo {
+        position: relative;
+        left: 28%;
+    }
+
+    #linha-left {
+        position: relative;
+        left: 30% !important;
+    }
+
+    #top-right-box {
+        position: relative;
+        left: -25%;
+        z-index: 0;
+        border-right: 3px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    #top-right-box span a {
+        font-weight: 500;
+        font-size: 10pt !important;
+        text-align: center;
+    }
+
+    nav div a,
+    nav input {
+        font-size: 7.5pt !important;
+    }
+
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    nav {
+        left: -230px;
+    }
+
+
+    .container .row {
+        width: 800px;
+        
+    }
+
+    nav div a,
+    nav input {
+        font-size: 7.5pt !important;
+    }
+
+    #container-logo {
+        left: 450px;
+        margin: 0 auto;
+    }
+
+
+    #simbolo {
+        position: relative;
+        left: 15%;
+    }
+
+    #linha-left {
+        position: relative;
+        left: 17% !important;
+    }
+
+    #top-right-box {
+        position: relative;
+        left: -11.5%;
+        z-index: 0;
+        border-right: 3px solid black;
+    }
+
+    #top-right-box span a {
+        font-weight: 500;
+        font-size: 10pt !important;
+        text-align: center;
+    }
+
+
+}
+@media screen and (min-width: 1400px) and (max-width: 1499px) {
+
+    #container-logo {
+        left: 400px !important;
+        margin: 0 auto;
+    }
+
+}
+@media screen and (min-width: 1500px) and (max-width: 1599px) {
+
+    #container-logo {
+        left: 400px !important;
+        margin: 0 auto;
+    }
+
+}
+@media screen and (min-width: 1600px) and (max-width: 1699px) {
+
+    #container-logo {
+        left: 450px !important;
+        margin: 0 auto;
+    }
+
+}
+@media screen and (min-width: 1700px) and (max-width: 1799px) {
+
+    #container-logo {
+        left: 500px !important;
+        margin: 0 auto;
+    }
+
+}
