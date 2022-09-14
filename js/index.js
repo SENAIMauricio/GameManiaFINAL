@@ -54,6 +54,7 @@ else {
 
 // jQuery aqui: 
 
+// Utilizei 'click' apenas para demonstração. O correto seria algum evento de touch já que é para versão tablet e mobile.
 function menuDesaparece() {
     $('main, footer').click(function(){
         $('.menu').css('display','none');
