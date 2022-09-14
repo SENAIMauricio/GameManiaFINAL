@@ -1,4 +1,6 @@
 //----------PRODUTOS-BLUR-------------//
+$(document).ready(function(){
+
 var img1 = document.getElementById("img-pqn1");
 var img2 = document.getElementById("img-pqn2");
 var textoImg1 = document.getElementById("texto-img1");
@@ -9,7 +11,6 @@ let bodyWidth = body.offsetWidth;
 
 function borraDesborra() {    
 
-    if (bodyWidth > 767) {
     img1.addEventListener("mouseover",function(){
         img1.style.filter = 'blur(5px)';
         img1.style.opacity = '0.5';
@@ -38,11 +39,57 @@ function borraDesborra() {
         img2.style.opacity = '1';
         textoImg2.style.display = 'none';
         sectionPromocao.style.top = '-40px'
-    })}
+    })
 };
 
-borraDesborra();
+console.log(bodyWidth);
 
+if (bodyWidth >= 1695) {
+borraDesborra();} 
+else {
+    void (0);
+}
+
+
+
+// jQuery aqui: 
+
+function menuDesaparece() {
+    $('main, footer').click(function(){
+        $('.menu').css('display','none');
+        $('#produtos,#section-imagens,#section-promocao,header,footer').css('filter', 'none');
+        
+    });
+};
+
+function menuAparece() {
+    $('#menu').click(function(){
+        $('.menu').css('display','flex');
+        $('#produtos,#section-imagens,#section-promocao,header,footer').css('filter', 'blur(10px)');
+    });
+};
+
+function barraAparece() {
+    $('#buscar').click(function(){
+        $('.barra-de-busca-aparece').css('display','block');
+        $('#produtos,#section-imagens,#section-promocao,header,footer').css('filter', 'blur(10px)');
+    });
+};
+
+function barraDesaparece() {
+    $('main,footer').click(function(){
+        $('.barra-de-busca-aparece').css('display','none');
+        $('#produtos,#section-imagens,#section-promocao,header,footer').css('filter', 'none');
+    })
+}
+
+menuAparece();
+menuDesaparece();
+
+barraAparece();
+barraDesaparece();
+
+});
 
 
 
