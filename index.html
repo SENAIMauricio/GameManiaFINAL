@@ -11,35 +11,36 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
-    <header>
+<body id="body">
+    <header class="flex-container-header">
 
         <!--Houve um problema para exportar as imagens do símbolo e do logo, portanto escolhi fazê-las como texto no HTML e estilizar com o CSS-->
-        <span id="simbolo"><a href="index.html">GM<div id="shadow-simbolo"></div></a></span>
-
-        <span id="linha-left"></span>
-
-
-        <div id="container-logo">
-            <div id="logotipo">
-                <span id="link-logotipo">GAME MANIA</span>
-                <a href="./index.html">
-                    <div id="shadow-logotipo"></div>
-                </a>
-            </div>
+        <div class="simbolo-container">
+            <span id="simbolo"><a href="index.html">GM<div id="shadow-simbolo"></div></a></span>
+            <span id="linha-left"></span>
         </div>
 
 
-        <nav class="container">
-            <div class="row">
-                <a class="col-xxl-1 col-xl-1 col-lg-1" href="#">Produtos</a>
-                <a class="col-xxl-2 col-xl-1 col-lg-1" href="#">Promoções</a>
-                <a class="col-xxl-2 col-xl-2 col-lg-2 fonte-menor" href="#" class=>Exclusivo para Gamers</a>
-                <a class="col-xxl-2 col-xl-2 col-lg-2 fonte-menor" href="#" class="fonte-menor">Área do Cliente</a>
-                <a class="col-xxl-1 col-xl-1 col-lg-1" href="#">Contato</a>
-                <input class="col-xxl-4 col-xl-5 col-lg-5 col-md-12" type="search" placeholder="Buscar no site" id="barra-de-busca">
+        <div class="logotipo-container">
+            <div id="container-logo">
+                <div id="logotipo">
+                    <span id="link-logotipo">GAME MANIA</span>
+                    <a href="./index.html">
+                        <div id="shadow-logotipo"></div>
+                    </a>
+                </div>
             </div>
-        </nav>
+            <nav class="container">
+                <div class="row">
+                    <a class="col-xxl-1 col-xl-1 col-lg-1" href="#">Produtos</a>
+                    <a class="col-xxl-2 col-xl-1 col-lg-1" href="#">Promoções</a>
+                    <a class="col-xxl-2 col-xl-2 col-lg-2 fonte-menor" href="#" class=>Exclusivo para Gamers</a>
+                    <a class="col-xxl-2 col-xl-2 col-lg-2 fonte-menor" href="#" class="fonte-menor">Área do Cliente</a>
+                    <a class="col-xxl-1 col-xl-1 col-lg-1" href="#">Contato</a>
+                    <input class="col-xxl-4 col-xl-5 col-lg-5 col-md-12" type="search" placeholder="Buscar no site" id="barra-de-busca">
+                </div>
+            </nav>
+        </div>
 
         <div id="top-right-box">
             <span id="login"><a href="login.html" target="_blank">Fazer Login</a></span>
@@ -47,7 +48,6 @@
             <span id="cadastro"><a href="#" target="_blank">Cadastrar-se</a></span>
             <span id="buscar"><a href="#" target="_blank">Buscar</a></span>
         </div>
-
 
     </header>
 
@@ -59,25 +59,26 @@
                         O QUE VOCÊ PROCURA?
                     </div>
                     <div class="flex-container">
-                        <span class="border-cima"><a href="#">videogames</a></span>
-                        <span class="border-cima"><a href="#">computadores</a></span>
-                        <span class="border-cima"><a href="#">headphones e headsets</a></span>
+                        <span class="border-cima border-cima-sm"><a href="#">videogames</a></span>
+                        <span class="border-cima tirar-border-cima"><a href="#">computadores</a></span>
+                        <span class="border-cima tirar-border-cima"><a href="#">headphones e headsets</a></span>
                         <span><a href="#">notebooks</a></span>
                         <span><a href="#">teclados</a></span>
                         <span><a href="#">microfones</a></span>
                         <span><a href="#">acessórios</a></span>
                         <span><a href="#">mouses e mousepads</a></span>
                         <span><a href="#">webcams</a></span>
-                        <span class="border-baixo"><a href="#">celulares e smartphones</a></span>
-                        <span class="border-baixo"><a href="#">kit gamer</a></span>
-                        <span class="border-baixo"><a href="#">câmeras digitais</a></span>
+                        <span class="border-baixo tirar-border-baixo"><a href="#">celulares e smartphones</a></span>
+                        <span class="border-baixo tirar-border-baixo"><a href="#">kit gamer</a></span>
+                        <span class="border-baixo border-baixo-sm"><a href="#">câmeras digitais</a></span>
                     </div>
                 </div>
             </div>
         </section>
+
         <section id="section-imagens">
             <div id="imagens" class="container">
-                <div class="titulo-vermelho">NOSSOS PRODUTOS</div>
+                <div class="titulo-vermelho" id="nossos-produtos">NOSSOS PRODUTOS</div>
                 <div id="flex-container-img">
                     <a href="#" target="_blank"><img class="imagem-pequena" id="img-pqn1" src="img/img-2.png"
                             alt="notebook, tablet, teclado e tela sobre mesa de madeira"></a>
@@ -88,20 +89,22 @@
             <span id="texto-img1"></span>
             <span id="texto-img2"></span>
         </section>
-        <section id="section-promocao">
+
+        <section id="section-promocao" class="ocultar-promocao">
             <div id="promocao" class="container">
-                <div class="titulo-vermelho">PROMOÇÃO<br> kit headphone + teclado + mouse <br>R$100,00 </div>
+                <div class="titulo-vermelho" id="promocao">PROMOÇÃO<br> kit headphone + teclado + mouse <br>R$100,00 </div>
                 <div>
                     <a href="#" target="_blank"><img id="imagem-grande" src="img/img-3.png"
                             alt="headphone, teclado e mouse"></a>
                 </div>
             </div>
         </section>
+        
         <div id="fundo-preto"></div>
     </main>
 
-    <footer>
-        <div class="parent-footer container">
+    <footer >
+        <div class="parent-footer container-fluid ocultar-footer">
             <div class="child-left">
                 <ul>
                     <a href="#">
@@ -249,13 +252,168 @@
                         <li><img src="img/yt-icon.png" alt="ícone do YouTube">&nbsp&nbspEmpresaVídeos</li>
                     </a>
                     <br>
-                    <a href="https://www.instagram.com.br" target="_blank">
-                        <li><img src="img/ins-icon.png" alt="ícone do Instagram">&nbsp&nbsp@EmpresaFotos</li>
+                    <a  href="https://www.instagram.com.br" target="_blank">
+                        <li><img src="img/ins-icon.png" alt="ícone do Instagram"><span id="e-f">&nbsp&nbsp@EmpresaFotos</span></li>
                     </a>
                 </ul>
             </div>
         </div>
-        <div class="fundo-footer"></div>
+
+        <div class="container-fluid flex-container-footer ocultar mostrar">
+            <div id="left">
+                <ul>
+                    <a href="#">
+                        <li>Produtos</li>
+                    </a>
+                    <a href="#">
+                        <li>Promoções</li>
+                    </a>
+                    <a href="#">
+                        <li>Exclusivo para Gamers</li>
+                    </a>
+                    <a href="#">
+                        <li>Área do Cliente</li>
+                    </a>
+                    <a href="#">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+                <hr class="hr">
+                <ul>
+                    <a href="#">Produtos:</a>
+                    <a href="#">
+                        <li>Videogames</li>
+                    </a>
+                    <a href="#">
+                        <li>Notebooks</li>
+                    </a>
+                    <a href="#">
+                        <li>Acessórios</li>
+                    </a>
+                    <a href="#">
+                        <li>Celulares e Smartphones</li>
+                    </a>
+                    <a href="#">
+                        <li>Computadores</li>
+                    </a>
+                    <a href="#">
+                        <li>Teclados</li>
+                    </a>
+                    <a href="#">
+                        <li>Mouses e Mousepads</li>
+                    </a>
+                    <a href="#">
+                        <li>Kit Gamer</li>
+                    </a>
+                    <a href="#">
+                        <li>Headphones e Headsets</li>
+                    </a>
+                    <a href="#">
+                        <li>Microfones</li>
+                    </a>
+                    <a href="#">
+                        <li>Webcams</li>
+                    </a>
+                    <a href="#">
+                        <li>Câmeras Digitais</li>
+                    </a>
+                </ul>
+                    <ul>
+                        <a href="#">Promoções:</a>
+                        <a href="#">
+                            <li>Leve 3 Pague 2</li>
+                        </a>
+                        <a href="#">
+                            <li>80% de Desconto</li>
+                        </a>
+                        <a href="#">
+                            <li>Kits Econômicos</li>
+                        </a>
+                    </ul>
+                    <hr class="hr">
+                    <ul>
+                        <a href="#">Exclusivo para Gamers:</a>
+                        <a href="#">
+                            <li>PC Gamer</li>
+                        </a>
+                        <a href="#">
+                            <li>Teclado Gamer</li>
+                        </a>
+                        <a href="#">
+                            <li>Mouse Gamer</li>
+                        </a>
+                        <a href="#">
+                            <li>Placas de Vídeo</li>
+                        </a>
+                    </ul>
+                    <hr class="hr">
+            </div>
+
+            <div id="right">
+                <ul>
+                    <a href="#">Área do Cliente:</a>
+                    <a href="#">
+                        <li>Atualizar Cadastro</li>
+                    </a>
+                    <a href="#">
+                        <li>Carrinho de Compras</li>
+                    </a>
+                    <a href="#">
+                        <li>Apagar Conta</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="#">Contato:</a>
+                    <a href="#">
+                        <li>Fale Conosco</li>
+                    </a>
+                    <a href="#">
+                        <li>Enviar Sugestão</li>
+                    </a>
+                    <a href="#">
+                        <li>Falar com SAC</li>
+                    </a>
+                    <li>Email: <br> empresa@gmail.com</li>
+                    <li>Telefone: <br> (01)23456-7890</li>
+                </ul>
+                <hr class="hr">
+                <ul>
+                    <a href="#">Sobre a Empresa:</a>
+                    <a href="#">
+                        <li>História</li>
+                    </a>
+                    <a href="#">
+                        <li>Endereço e Horários</li>
+                    </a>
+                    <a href="#">
+                        <li>Missão, Visão e Valores</li>
+                    </a>
+                    <a href="#">
+                        <li>Trabalhe Conosco</li>
+                    </a>
+                </ul>
+                <hr class="hr">
+                <ul>
+                    <span id="redes-sociais">Redes Sociais:</span>
+                    <br><br>
+                    <a href="https://www.facebook.com.br" target="_blank">
+                        <li><img src="img/fb-icon.png" alt="ícone do Facebook">&nbsp&nbspEmpresaVendas</li>
+                    </a>
+                    <br>
+                    <a href="https://www.youtube.com.br" target="_blank">
+                        <li><img src="img/yt-icon.png" alt="ícone do YouTube">&nbsp&nbspEmpresaVídeos</li>
+                    </a>
+                    <br>
+                    <a  href="https://www.instagram.com.br" target="_blank">
+                        <li><img src="img/ins-icon.png" alt="ícone do Instagram"><span id="e-f">&nbsp&nbsp@EmpresaFotos</span></li>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- <div class="fundo-footer"></div> -->
     </footer>
 </body>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -269,5 +427,6 @@
     integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
     crossorigin="anonymous"></script>
 <script src="js/index.js"></script>
+
 
 </html>
